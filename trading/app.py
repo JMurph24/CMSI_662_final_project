@@ -80,7 +80,7 @@ def transfer():
         abort(400, "You don't have that much")
 
     if do_transfer(source, target, amount):
-        pass  # TODO GIVE FEEDBACK
+        redirect("/dashboard")
     else:
         abort(400, "Something bad happened")
 
