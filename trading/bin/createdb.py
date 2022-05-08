@@ -1,6 +1,7 @@
 import sqlite3
 from passlib.hash import pbkdf2_sha256
 
+#This creates the users table with email and password along with hashing
 con = sqlite3.connect('bank.db')
 cur = con.cursor()
 cur.execute('''
