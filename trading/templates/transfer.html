@@ -1,3 +1,5 @@
+<!--Transfer template with CSRF to prevent attackers from
+    stealing users money-->
 <h1>Make a Transfer</h1>
 
 <form method="POST" action="/transfer">
@@ -5,8 +7,8 @@
   From   <input name="from" />
   To     <input name="to" />
   Amount <input name="amount" />
-         <input type="submit" value="Transfer">
-  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <input type="submit" value="Transfer">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
   </pre>
 </form>
 
